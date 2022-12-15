@@ -1,0 +1,253 @@
+/* Agar Tidak ada gap pada header */
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.bg-primary{
+    background: #1A2238!important;
+}
+nav ul{
+    display: flex;
+    padding: 25px;
+} 
+.navbar{
+    margin-top: 0;
+    padding-block: 20px;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+header{
+    background: #1A2238;
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.logo{
+    margin-right: auto;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+.logo:hover{
+    color: #e3d536;
+    transform: rotate(2deg);
+}
+.btn-ctl{
+    font-size: 20px;
+    margin-right: 10px;
+    border: none;
+    padding: 6px 12px;
+    background:red;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.btn-ctl:hover{
+    background: green;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+}
+
+/* Shake Function */
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+.title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.status{
+    font-size: 30px;
+    font-weight: bolder;
+    gap: 20px;
+}
+.containerku{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+
+}
+.ryan-img1{
+    max-width: 500px;
+    height: auto;
+    width: 80%;
+    padding: 10px;
+}
+.oke{
+    background-image: url('asset/ryan-img-putih.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1A2238;
+    color: white;
+    padding: 40px;
+    gap: 20px;
+}
+li{
+    list-style: none;
+    padding: 10px;
+}
+li a{
+    transition: all .5s ease 0s;
+    display: inline-block;
+}
+
+li a:hover{
+    color:red;
+    transform: rotate(2deg);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.btn-kerjasama{
+    margin-top: 20px;
+}
+.cardku{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 130px;
+    
+}
+.wrapperku{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 1px;
+}
+
+.card-item{
+   background: #e1e6ed;
+   border-radius: 15px;
+    color: black;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 2px 5px 5px 1px #000000;
+    text-align: center;
+    
+}
+.personal-traits{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    background: #f07630;
+    color: white;
+
+}
+.traits-info{
+    font-family: 'Times New Roman', Times, serif;
+}
+.separatorku{
+    margin-bottom: 15px;
+    border-style: outset;
+    
+}
+.card-title{
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+}
+.copyright-title{
+    font-size: 30px;
+}
+.copyright-desc{
+    padding-top: 2px
+}
+.card-desc{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+footer{
+    padding: 20px;
+   text-align: center;
+   background: #1A2238;
+   color: white;
+   font-weight: bolder;
+   width: auto
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .cardku{
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-item{
+        width: 100%;
+        opacity: 0.9;
+    }
+    .containerku{
+        width: 100%;
+        padding: 0;
+    }
+    .ryan-img1{
+        width: 100%;
+        padding: 0;
+    }
+
+    .intro{
+        margin-top: 20px;
+        
+    }
+    nav{
+        position: fixed;
+        bottom: 0;
+        width: 100% ;
+        background: #1A2238;
+        z-index: 9;
+    }
+}
